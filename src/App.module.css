@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.headerContainer {
+  max-width: 900px;
+  margin: 40px auto;
+}
+.container {
+  display: flex;
+  max-width: 900px;
+  margin: auto;
+  gap: 80px;
+}
+.leftSide {
+  flex: 1;
+}
+.rightSide {
+  flex: 1;
+}
+
+.imcIcon {
+  width: 150;
+}
