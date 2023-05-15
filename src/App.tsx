@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./App.module.css";
 import imcIcon from "./assets/imcIcon.png";
+import { levels, calculateImc } from "./helpers/imc";
 
 function App() {
   const [heightField, setHeightField] = useState<number>(0);
@@ -19,7 +20,7 @@ function App() {
       </header>
       <div className={styles.container}>
         <div className={styles.leftSide}>
-          <h1>Calcule o seu IMC.</h1>
+          <h1>Calcule o seu IMC</h1>
           <p>
             IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela
             Organização Mundial da Saúde para calcular o peso ideal de cada
