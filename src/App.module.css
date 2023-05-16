@@ -117,10 +117,11 @@ body {
     row-gap: 50px;
   }
   .container .leftSide {
-    margin-right: 0;
+    margin-right: 20px;
   }
   .container .rightSide {
     margin-left: 0;
+    margin-right: 20px;
   }
   .container .rightSide .rightArrow {
     margin-top: 0;
