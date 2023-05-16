@@ -42,14 +42,21 @@ function App() {
             placeholder="Digite a sua altura. Exemplo: 1,73 (em metros)"
             value={heightField > 0 ? heightField : ""}
             onChange={(e) => setHeightField(parseFloat(e.target.value))}
+            disabled={toShow ? true : false}
           />
           <input
             type="number"
             placeholder="Digite o seu peso. Exemplo: 63,5 (em kilogramas)"
             value={weightField > 0 ? weightField : ""}
             onChange={(e) => setWeightField(parseFloat(e.target.value))}
+            disabled={toShow ? true : false}
           />
-          <button onClick={handleCalulateButton}>Calcular</button>
+          <button
+            onClick={handleCalulateButton}
+            disabled={toShow ? true : false}
+          >
+            Calcular
+          </button>
         </div>
         <div className={styles.rightSide}>
           {!toShow && (
