@@ -18,10 +18,10 @@ body {
   display: flex;
   max-width: 900px;
   margin: auto;
-  row-gap: 80px;
 }
 .container .leftSide {
   flex: 1;
+  margin-right: 40px;
 }
 .container .leftSide h1 {
   margin: 0;
@@ -68,6 +68,7 @@ body {
 
 .container .leftSide button:disabled {
   opacity: 0.5;
+  cursor: default;
 }
 
 .container .rightSide {
@@ -114,14 +115,13 @@ body {
   .container {
     padding: 0 20px;
     flex-direction: column;
-    row-gap: 50px;
   }
   .container .leftSide {
-    margin-right: 20px;
+    margin-right: 0px;
   }
   .container .rightSide {
     margin-left: 0;
-    margin-right: 20px;
+    margin-top: 50px;
   }
   .container .rightSide .rightArrow {
     margin-top: 0;
